@@ -2,26 +2,26 @@
 
 <softwareradio name="Radio1">
 
-  <controller class="spectrumwarstx">
+  <controller class="rffrontend">
     <parameter name="minfrequency" value="2491000000"/>
     <parameter name="maxfrequency" value="2494000000"/>
     <parameter name="minbandwidth" value="250000"/>
     <parameter name="maxbandwidth" value="2000000"/>
     <parameter name="mingain" value="0"/>
     <parameter name="maxgain" value="20"/>
-    <parameter name="frontendtx" value="usrptx1"/>
-    <parameter name="frontendtxengine" value="phyengine3"/>
+    <parameter name="frontend" value="usrptx1"/>
+    <parameter name="frontendengine" value="phyengine3"/>
   </controller>
 
-  <controller class="spectrumwarstx">
+  <controller class="rffrontend">
     <parameter name="minfrequency" value="2491000000"/>
     <parameter name="maxfrequency" value="2494000000"/>
     <parameter name="minbandwidth" value="250000"/>
     <parameter name="maxbandwidth" value="2000000"/>
     <parameter name="mingain" value="0"/>
     <parameter name="maxgain" value="20"/>
-    <parameter name="frontendtx" value="usrprx1"/>
-    <parameter name="frontendtxengine" value="phyengine1"/>
+    <parameter name="frontend" value="usrprx1"/>
+    <parameter name="frontendengine" value="phyengine1"/>
   </controller>
 
 
@@ -31,7 +31,7 @@
 
     <component name="tuntap0" class="tuntap">
       <parameter name="device" value="tap0"/>
-      <parameter name="readfrombelow" value="false"/>
+      <parameter name="readfrombelow" value="true"/>
       <port name="bottomport1" class="io"/>
     </component>
 
